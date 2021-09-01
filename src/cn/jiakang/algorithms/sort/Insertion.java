@@ -1,6 +1,8 @@
 package cn.jiakang.algorithms.sort;
 
 public class Insertion extends JkSort {
+    public static int M = 10;
+
     /**
      * 步骤描述
      * 1. 获取第i个元素（1 ～ N-1），将该元素与该元素之前的元素从后往前逐一比较

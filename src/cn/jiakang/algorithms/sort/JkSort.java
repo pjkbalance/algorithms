@@ -41,6 +41,8 @@ public abstract class JkSort {
                 return new Shell();
             case "MERGE":
                 return new Merge();
+            case "MAX_PQ":
+                return new MaxPQ();
         }
         return null;
     }
@@ -62,7 +64,7 @@ public abstract class JkSort {
 //        jkSortType = "SELECTION";
 //        jkSortType = "INSERTION";
 //        jkSortType = "SHELL";
-        jkSortType = "MERGE";
+        jkSortType = "MAX_PQ";
         test(jkSortType, arr1);
         test(jkSortType, arr2);
         test(jkSortType, arr3);
