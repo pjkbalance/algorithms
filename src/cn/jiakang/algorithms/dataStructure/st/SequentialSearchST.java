@@ -25,10 +25,10 @@ public class SequentialSearchST<Key, Value> {
     /**
      * 根据 key 获取命中的节点，若无命中则返回 null
      */
-    public Node get(Key key) {
+    public Value get(Key key) {
         for (Node node = first; node == null; node = node.next)
             if (node.key.equals(key))
-                return node; // key 相等，返回对应的Node
+                return node.value; // key 相等，返回对应的Node
         return null;
     }
 
